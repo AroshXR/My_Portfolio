@@ -1,3 +1,13 @@
+import shopX from '/src/assets/shopX.png';
+import examcore from '/src/assets/examcore.jpeg';
+import HTML5 from '/src/assets/Logos/Tech/HTML5.png';
+import CSS3 from '/src/assets/Logos/Tech/CSS3.png';
+import javascript from '/src/assets/Logos/Tech/javascript.png';
+import PHP from '/src/assets/Logos/Tech/PHP.png';
+import MySQL from '/src/assets/Logos/Tech/MySQL.png';
+import java from '/src/assets/Logos/Tech/java.png';
+
+
 export const myProjects = [
   {
     id: 1,
@@ -12,7 +22,7 @@ export const myProjects = [
     ],
     href: "https://github.com/AroshXR/ShopX_Online_E_Shopping_Management_System",
     logo: "",
-    image: "/src/assets/shopX.png",
+    image: shopX,
     tags: [
       {
         id: 1,
@@ -22,12 +32,12 @@ export const myProjects = [
       {
         id: 2,
         name: "java",
-        path: "src/assets/Logos/Tech/java.png",
+        path: java,
       },
       {
         id: 3,
         name: "MySQL",
-        path: "src/assets/Logos/Tech/MySQL.png",
+        path: MySQL,
       },
       {
         id: 3,
@@ -50,32 +60,32 @@ export const myProjects = [
     ],
   href: "https://github.com/AroshXR/ExamCore_Online_Examination_Management_System",
   logo: "",
-  image: "/src/assets/examcore.jpeg",
+  image: examcore,
   tags: [
     {
       id: 1,
       name: "HTML",
-      path: "/src/assets/Logos/Tech/HTML5.png",
+      path: HTML5,
     },
     {
       id: 2,
       name: "CSS",
-      path: "/src/assets/Logos/Tech/CSS3.png",
+      path: CSS3,
     },
     {
       id: 3,
       name: "JavaScript",
-      path: "/src/assets/Logos/Tech/JavaScript.png",
+      path: javascript,
     },
     {
       id: 4,
       name: "PHP",
-      path: "/src/assets/Logos/Tech/PHP.png",
+      path: PHP,
     },
     {
       id: 5,
       name: "MySQL",
-      path: "/src/assets/Logos/Tech/MySQL.png",
+      path: MySQL,
     },
   ],
   },

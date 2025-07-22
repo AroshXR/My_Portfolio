@@ -1,19 +1,55 @@
-import React from 'react'
-import Card from '../components/Card'
-import { useRef } from 'react';
+import React from 'react';
+import Card from '../components/Card';
+import { useRef, useState } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { useState } from 'react';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+
+import endercity from '/src/assets/thumbnails/endercity.png';
+import loseMyMind from '/src/assets/thumbnails/lose my mind.png';
+import synthking6900 from '/src/assets/thumbnails/synthking6900.png';
+import timeless from '/src/assets/thumbnails/timeless.png';
+import ITDesign from '/src/assets/ITDesign.png';
+import visualizer from '/src/assets/visualizer.png';
+
+// Tech Logos
+import C from '/src/assets/Logos/Tech/C.png';
+import java from '/src/assets/Logos/Tech/java.png';
+import Cpp from '/src/assets/Logos/Tech/C++.png';
+import NodeJS from '/src/assets/Logos/Tech/Node.js.png';
+import HTML5 from '/src/assets/Logos/Tech/HTML5.png';
+import CSS3 from '/src/assets/Logos/Tech/CSS3.png';
+import javascript from '/src/assets/Logos/Tech/javascript.png';
+import Dart from '/src/assets/Logos/Tech/Dart.png';
+import Express from '/src/assets/Logos/Tech/Express.png';
+import MongoDB from '/src/assets/Logos/Tech/MongoDB.png';
+import MySQL from '/src/assets/Logos/Tech/MySQL.png';
+import PHP from '/src/assets/Logos/Tech/PHP.png';
+import Flutter from '/src/assets/Logos/Tech/Flutter.png';
+import Python from '/src/assets/Logos/Tech/Python.png';
+import ReactLogo from '/src/assets/Logos/Tech/React.png';
+
+// Non-Tech Logos
+import Ps from '/src/assets/Logos/Non Tech/Ps.png';
+import Ae from '/src/assets/Logos/Non Tech/Ae.png';
+import Pr from '/src/assets/Logos/Non Tech/pr.png';
+import Vscode from '/src/assets/Logos/Non Tech/Vscode.png';
+import Postgres from '/src/assets/Logos/Non Tech/Postgres.png';
+import Intellij from '/src/assets/Logos/Non Tech/Intellij.png';
+import GitHub from '/src/assets/Logos/Non Tech/GitHub.png';
+import Figma from '/src/assets/Logos/Non Tech/Figma.png';
+import Blender from '/src/assets/Logos/Non Tech/Blender.png';
+import AndroidStudio from '/src/assets/Logos/Non Tech/Android Studio.png';
+import flstudio from '/src/assets/Logos/Non Tech/flstudio.png';
 
 function About({ id }) {
 
   const grid2Container = useRef(null);
   const grid3Container = useRef(null);
   const photos = [
-    { src: 'src/assets/thumbnails/endercity.png', link: 'https://youtu.be/auM0OONHDoM?si=uzSEwRw8haYNFPnu' },
-    { src: 'src/assets/thumbnails/lose my mind.png', link: 'https://youtu.be/IXEHWZD5I0I?si=JnE1ET3XoYOg8QCz' },
-    { src: 'src/assets/thumbnails/synthking6900.png', link: 'https://youtu.be/YGTcbU8GxDQ?si=GRwk85ldfj6FiFLY' },
-    { src: 'src/assets/thumbnails/timeless.png', link: 'https://youtu.be/cceC8VN1FWc?si=x84GuS979r_t-sEr' }
+    { src: endercity, link: 'https://youtu.be/auM0OONHDoM?si=uzSEwRw8haYNFPnu' },
+    { src: loseMyMind, link: 'https://youtu.be/IXEHWZD5I0I?si=JnE1ET3XoYOg8QCz' },
+    { src: synthking6900, link: 'https://youtu.be/YGTcbU8GxDQ?si=GRwk85ldfj6FiFLY' },
+    { src: timeless, link: 'https://youtu.be/cceC8VN1FWc?si=x84GuS979r_t-sEr' }
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -36,7 +72,7 @@ function About({ id }) {
         {/* Grid 1 - Purple/Pink with diagonal gradient */}
         <div className="relative z-10 h-full rounded-xl md:rounded-2xl grid-1 p-4 md:p-6 bg-gradient-to-br from-purple-900 via-fuchsia-800 to-pink-600 flex flex-col justify-end">
           <img
-            src="/src/assets/ITDesign.png"
+            src={ITDesign}
             className='absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay'
             alt="Design background"
           />
@@ -85,77 +121,77 @@ function About({ id }) {
             />
             <Card
               style={{ rotate: '15deg', bottom: '5%', left: '0%' }}
-              image="src/assets/Logos/Tech/C.png"
+              image={C}
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: '30deg', bottom: '10%', left: '50%' }}
-              image="src/assets/Logos/Tech/java.png"
+              image={java}
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: '15deg', bottom: '6%', left: '20%' }}
-              image="src/assets/Logos/Tech/C++.png"
+              image={Cpp}
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: '0deg', bottom: '20%', left: '35%' }}
-              image="src/assets/Logos/Tech/Node.js.png"
+              image={NodeJS}
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: '20deg', bottom: '70%', left: '75%' }}
-              image="src/assets/Logos/Tech/HTML5.png"
+              image={HTML5}
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: '10deg', bottom: '70%', left: '60%' }}
-              image="src/assets/Logos/Tech/CSS3.png"
+              image={CSS3}
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: '30deg', bottom: '15%', left: '70%' }}
-              image="src/assets/Logos/Tech/javascript.png"
+              image={javascript}
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: '0deg', bottom: '80%', left: '20%' }}
-              image="src/assets/Logos/Tech/Dart.png"
+              image={Dart}
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: '0deg', bottom: '50%', left: '88%' }}
-              image="src/assets/Logos/Tech/Express.png"
+              image={Express}
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: '0deg', bottom: '40%', left: '70%' }}
-              image="src/assets/Logos/Tech/MongoDB.png"
+              image={MongoDB}
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: '0deg', bottom: '55%', left: '0%' }}
-              image="src/assets/Logos/Tech/MySQL.png"
+              image={MySQL}
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: '0deg', bottom: '25%', left: '0%' }}
-              image="src/assets/Logos/Tech/PHP.png"
+              image={PHP}
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: '0deg', bottom: '80%', left: '40%' }}
-              image="src/assets/Logos/Tech/Flutter.png"
+              image={Flutter}
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: '0deg', bottom: '30%', left: '20%' }}
-              image="src/assets/Logos/Tech/Python.png"
+              image={Python}
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: '0deg', bottom: '60%', left: '35%' }}
-              image="src/assets/Logos/Tech/React.png"
+              image={ReactLogo}
               containerRef={grid2Container}
             />
           </div>
@@ -167,62 +203,62 @@ function About({ id }) {
             <p className='flex items-end text-3xl text-grey-500'>Other Skills Bucket</p>
             <Card
               style={{ rotate: '65deg', bottom: '15%', left: '3%' }}
-              image="src/assets/Logos/Non Tech/Ps.png"
+              image={Ps}
               containerRef={grid3Container}
             />
             <Card
               style={{ rotate: '30deg', bottom: '10%', left: '50%' }}
-              image="src/assets/Logos/Non Tech/Ae.png"
+              image={Ae}
               containerRef={grid3Container}
             />
             <Card
               style={{ rotate: '15deg', bottom: '10%', left: '20%' }}
-              image="src/assets/Logos/Non Tech/pr.png"
+              image={Pr}
               containerRef={grid3Container}
             />
             <Card
               style={{ rotate: '0deg', bottom: '20%', left: '35%' }}
-              image="src/assets/Logos/Non Tech/Vscode.png"
+              image={Vscode}
               containerRef={grid3Container}
             />
             <Card
               style={{ rotate: '20deg', bottom: '70%', left: '75%' }}
-              image="src/assets/Logos/Non Tech/Postgres.png"
+              image={Postgres}
               containerRef={grid3Container}
             />
             <Card
               style={{ rotate: '10deg', bottom: '70%', left: '60%' }}
-              image="src/assets/Logos/Non Tech/Intellij.png"
+              image={Intellij}
               containerRef={grid3Container}
             />
             <Card
               style={{ rotate: '30deg', bottom: '15%', left: '70%', border: '2px solid white', borderRadius: '2rem' }}
-              image="src/assets/Logos/Non Tech/GitHub.png"
+              image={GitHub}
               containerRef={grid3Container}
             />
             <Card
               style={{ rotate: '25deg', bottom: '75%', left: '30%' }}
-              image="src/assets/Logos/Non Tech/Figma.png"
+              image={Figma}
               containerRef={grid3Container}
             />
             <Card
               style={{ rotate: '3deg', bottom: '70%', left: '88%' }}
-              image="src/assets/Logos/Non Tech/Blender.png"
+              image={Blender}
               containerRef={grid3Container}
             />
             <Card
               style={{ rotate: '55deg', bottom: '40%', left: '80%' }}
-              image="src/assets/Logos/Non Tech/Android Studio.png"
+              image={AndroidStudio}
               containerRef={grid3Container}
             />
             <Card
               style={{ rotate: '45deg', bottom: '55%', left: '0%' }}
-              image="src/assets/Logos/Non Tech/MySQL.png"
+              image={MySQL}
               containerRef={grid3Container}
             />
             <Card
               style={{ rotate: '2deg', bottom: '55%', left: '2%' }}
-              image="src/assets/Logos/Non Tech/flstudio.png"
+              image={flstudio}
               containerRef={grid3Container}
             />
           </div>
@@ -232,7 +268,7 @@ function About({ id }) {
         <div className='grid-4 rounded-xl md:rounded-2xl flex items-end bg-gradient-to-b from-gray-900 to-indigo-600 p-4 relative'>
           <div className='absolute inset-0 bg-grid-pattern opacity-30'></div>
           <img
-            src="/src/assets/visualizer.png"
+            src={visualizer}
             className='absolute inset-0 w-full h-full object-cover opacity-40 flex justify-end items-end mix-blend-overlay'
             alt="Design background"
           />

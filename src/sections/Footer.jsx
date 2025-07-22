@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import tunesSquredCircle from '/src/assets/tunes squred-circle.png';
 
 const Footer = () => {
   return (
@@ -71,7 +72,7 @@ const Footer = () => {
           >
             <motion.img
               className="w-32 h-32 mx-auto rounded-full border-4 border-[#d48d0b]"
-              src="/src/assets/tunes squred-circle.png"
+              src={tunesSquredCircle}
               alt="logo"
               initial={{ borderColor: '#d48d0b' }}
               whileHover={{
