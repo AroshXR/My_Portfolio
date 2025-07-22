@@ -36,7 +36,7 @@ export const PinContainer = ({
       className={twMerge("relative group/pin z-50 flex items-center justify-center cursor-pointer", containerClassName)}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
-      href={href || "#about"}
+      href={href || "/"}
       onClick={handleClick}
     >
       <div

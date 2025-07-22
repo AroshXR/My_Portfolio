@@ -6,6 +6,7 @@
 
   "homepage": "https://aroshxr.github.io/My_Portfolio/",
   "scripts": {
+    "dev": "vite",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "build": "vite build"
