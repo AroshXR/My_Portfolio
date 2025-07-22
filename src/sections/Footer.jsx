@@ -68,7 +68,7 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             className="col-span-1 cursor-pointer"
-            onClick={() => window.open('https://youtube.com/@aroshtunes_06', '_blank')}
+            onClick={() => window.open('https://lnk.bio/aroshtunes_06', '_blank')}
           >
             <motion.img
               className="w-32 h-32 mx-auto rounded-full border-4 border-[#d48d0b]"
