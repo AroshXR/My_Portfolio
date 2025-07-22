@@ -83,6 +83,7 @@ const Footer = () => {
               whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.3 }}
             />
+            <p className="text-center text-sm text-amber-200 mt-2">Visit my socials page</p>
           </motion.div>
         </div>
 

@@ -35,12 +35,12 @@ function HeroText() {
             transition={{ staggerChildren: 0.2 }}
         >
             <PinContainer title="Visit my portfolio" href="/">
-                <div className="text-center md:text-left">
+                <div className="text-center md:text-left px-2 max-w-full sm:max-w-md md:max-w-2xl mx-auto break-words overflow-hidden">
                     <motion.h1
-                        className="text-3xl md:text-5xl font-extrabold text-white py-3 drop-shadow-lg"
+                        className="text-xl sm:text-2xl md:text-5xl font-extrabold text-white py-3 drop-shadow-lg break-words overflow-hidden"
                         style={{
-                            WebkitTextStroke: '5px #000',
-                            textStroke: '5px #000',
+                            WebkitTextStroke: '3px #000',
+                            textStroke: '3px #000',
                             paintOrder: 'stroke fill'
                         }}
                         variants={textVariants}
@@ -50,10 +50,10 @@ function HeroText() {
                     </motion.h1>
 
                     <motion.p
-                        className="text-3xl md:text-4xl font-semibold text-cyan-300 py-2"
+                        className="text-base sm:text-lg md:text-4xl font-semibold text-cyan-300 py-2 break-words overflow-hidden"
                         style={{
-                            WebkitTextStroke: '5px #083344', // Dark cyan border
-                            textStroke: '5px #083344',
+                            WebkitTextStroke: '3px #083344',
+                            textStroke: '3px #083344',
                             paintOrder: 'stroke fill'
                         }}
                         variants={textVariants}
@@ -70,10 +70,10 @@ function HeroText() {
                     </motion.p>
 
                     <motion.p
-                        className="text-2xl md:text-3xl font-medium text-indigo-300 py-2"
+                        className="text-base sm:text-lg md:text-3xl font-medium text-indigo-300 py-2 break-words overflow-hidden"
                         style={{
-                            WebkitTextStroke: '5px #312e81', // Dark indigo border
-                            textStroke: '5px #312e81',
+                            WebkitTextStroke: '3px #312e81',
+                            textStroke: '3px #312e81',
                             paintOrder: 'stroke fill'
                         }}
                         variants={textVariants}

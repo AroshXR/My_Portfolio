@@ -341,18 +341,18 @@ function About({ id }) {
                 e.stopPropagation();
                 prevSlide();
               }}
-              className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-1 md:p-2 rounded-full opacity-70 md:opacity-0 group-hover:opacity-100 transition-opacity z-10"
+              className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/90 text-white p-1 md:p-2 rounded-full opacity-70 md:opacity-0 group-hover:opacity-100 transition-opacity z-10"
             >
-              <FiChevronLeft className="w-4 h-4 md:w-6 md:h-6" />
+              <FiChevronLeft className="w-6 h-6 md:w-6 md:h-6" />
             </button>
             <button
               onClick={(e) => {
                 e.stopPropagation();
                 nextSlide();
               }}
-              className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-1 md:p-2 rounded-full opacity-70 md:opacity-0 group-hover:opacity-100 transition-opacity z-10"
+              className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/90 text-white p-1 md:p-2 rounded-full opacity-70 md:opacity-0 group-hover:opacity-100 transition-opacity z-10"
             >
-              <FiChevronRight className="w-4 h-4 md:w-6 md:h-6" />
+              <FiChevronRight className="w-6 h-6 md:w-6 md:h-6" />
             </button>
 
             {/* Dots indicator */}

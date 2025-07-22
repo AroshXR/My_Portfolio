@@ -52,7 +52,7 @@ export const myProjects = [
     description:
       "A exam management system for conducting online examinations.",
     subDescription: [
-      "We created a website named \"ExamCore\" as our 1st year 2nd semester IWT module group project in SLIIT. We used HTML, CSS, JS, PHP and MySQL to create this web site and five of our group members(Nadun Weerakkody, Aroshana Sandeep, Tharini Gunasekara, Bhagya Prasadini, Chetha Atapattu) contributed to this project via GITHUB.",
+      "We created a website named \"ExamCore\" as our 1st year 2nd semester IWT module group project in SLIIT. We used HTML, CSS, JS, PHP and MySQL to create this web site and five of our group members contributed to this project via GITHUB.",
       "This website is created to manage examinations. There are three main actors emerge in this website namely Examiner, Student, Administrator.",
       "User can create exams, manage examiners, manage students, send notifications, answer to the papers ......",
       "We were well planned this project by gathering requirements, drawing diagrams and creating reports before implementation.",
