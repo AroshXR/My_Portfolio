@@ -288,7 +288,7 @@ function About({ id }) {
                 <span>• <span className="text-amber-200">Progressive House</span> 〽</span>
               </div>
               <p className="text-[0.7rem] md:text-[15px]">
-                Visit my production on{' '}
+                Check out my productions at{' '}
                 <a
                   href="https://www.youtube.com/@aroshtunes_06"
                   target="_blank"
