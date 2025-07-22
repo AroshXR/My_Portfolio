@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
 
-  "homepage": "https://AroshXR.github.io/My_Portfolio",
+  "homepage": "https://aroshxr.github.io/My_Portfolio/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
