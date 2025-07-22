@@ -34,7 +34,7 @@ function HeroText() {
             animate="visible"
             transition={{ staggerChildren: 0.2 }}
         >
-            <PinContainer title="Visit my portfolio" href="/">
+            <PinContainer title="Visit my portfolio" href="/My_Portfolio/">
                 <div className="text-center md:text-left px-2 max-w-full sm:max-w-md md:max-w-2xl mx-auto break-words overflow-hidden">
                     <motion.h1
                         className="text-xl sm:text-2xl md:text-5xl font-extrabold text-white py-3 drop-shadow-lg break-words overflow-hidden"
