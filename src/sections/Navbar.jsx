@@ -34,7 +34,7 @@ function Navbar() {
                 <div className='mx-auto px-4 max-w-7xl'>
                     <div className='flex items-center justify-between py-2 sm:py-0'>
                         <motion.a
-                            href="/"
+                            href="/My_Portfolio/"
                             className='text-3xl font-bold'
                             animate={{
                                 color: isOpen ? '#b300b3' : '#2563eb',
